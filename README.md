@@ -1,4 +1,5 @@
-geeMail
+**GeeMail**
+
 An asynchronous email platform that allows for the safe and secure sending of messages between user accounts. The values are stored in a sql lite database and 
 the cryptopp library is used for all of the cryptographic algorithms. 
 
@@ -7,20 +8,28 @@ and then stored in the database.
 
 Messages are encrypted using the salsa20 stream cipher and then stored in the databse. 
 
+**Installation**
 In order for this to work properly the cryptopp and sql lite libraries need to be installed on your machine. 
 
+#
 Commands to install cryptopp(in terminal): 
-sudo apt-get update
+
+```sudo apt-get update
 sudo apt-get install libcrypto++-dev libcrypto++-doc libcrypto++-utils
+```
+#
 
 Commands to install sqllite
-sudo apt-get install sqlite3
+
+```sudo apt-get install sqlite3```
 
 Once these are installed, in order to compile you must run: 
-make main
+
+```make main```
 
 In order to start the geeMail program you must run:
-./main 
+
+```./main ```
 
 With this platform you are able to create a user account, log into an user account, send messages to other users and view all messages in inbox. 
 
